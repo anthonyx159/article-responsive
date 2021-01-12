@@ -1,0 +1,15 @@
+[class*=icon-]::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.icon-share::before {
+    background: url(../images/icon-share.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+

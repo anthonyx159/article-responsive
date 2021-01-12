@@ -1,0 +1,32 @@
+// - Very Dark Grayish Blue: hsl(217, 19%, 35%)
+// - Desaturated Dark Blue: hsl(214, 17%, 51%)
+// - Grayish Blue: hsl(212, 23%, 69%)
+// - Light Grayish Blue: hsl(210, 46%, 95%)
+//Paleta de colores
+:root {
+    --color-blue-very-dark : hsl(217, 19%, 35%);
+    --color-blue-desaturated-dark : hsl(214, 17%, 51%);
+    --color-blue-grayish : hsl(210, 46%, 95%);
+    
+    --background-color-icon : #EEF1F8;
+    --background-color-share: #49556B;
+}
+
+//variables tipografia
+:root {
+    --body-font-size: 16px;
+}
+
+// Variables de apilamiento (z-index)
+:root {
+    --z-back    : -10;
+    --z-normal  : 1;
+    --z-tooltip : 10;
+    --z-fixed   : 100;
+    --z-modal   : 1000;
+  }
+
+//Breakpoints
+$breakpoints : (
+        s: 660px
+);

@@ -1,0 +1,34 @@
+//layout para el card__footer
+.card {
+    position: relative;
+}
+
+.card_footer__absolute {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background: var(--background-color-share);
+        height: 5.5rem;
+        margin-top: -5.5em;//para  que este al mismo nivel del card__footer
+        width: 100%;
+
+        span {
+            margin-left: 2rem;
+        }
+
+        a {
+            margin-left: 1.5rem;
+        }
+
+        //desktop
+        
+        @include from(s) {
+            width: 60%;
+            right: 0;
+            bottom: 0;
+        }
+}
+
+.card_footer__absolute.close {
+    display: none;
+}

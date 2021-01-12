@@ -1,0 +1,80 @@
+.card {
+ 
+    &__imgTitle {
+        @include from(s){
+            width: 40%;
+        }
+    }
+
+    &__content {
+        padding: 3rem 2rem 1.5rem;
+        opacity: 1;
+
+        @include from(s){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        color: var(--color-blue-very-dark);
+    }
+
+    &__text {
+        margin-bottom: 2rem;
+        color: var(--color-blue-desaturated-dark);
+    }
+
+    @include from(s){
+        display: flex;
+    }
+
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-blue-very-dark);
+
+    &-img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+
+    &-content{
+        display: flex
+    }
+
+    &-description {
+        margin-left:  2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .icon-share {
+        padding: 0.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: var(--background-color-icon);
+        border-radius: 50%;
+        z-index: var(--z-tooltip);
+        cursor: pointer;
+    }
+}
+
+.card_footer-date {
+    color: var(--color-blue-desaturated-dark);
+}
+
+.card_footer-title {
+    font-weight: bold;
+}
